@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--
+    雛型中繼資料
+    分析階段檔名：YYYY-MM-DD_prototype_<主程式代號>.html（僅留 2 版）
+    對外發布檔名：<程式代號>_<程式名稱英文>.html（不分版次）；版次於下方 title 或頁面內容呈現
+    主程式代號：[例 CUS110] 標題：[例 出口案件建檔]
+    參考：internal_docs/雛型產出規範與指引.md §7、§8.5
+  -->
+  <title>[主程式代號] [畫面標題] - 雛型</title>
+  <style>
+    :root {
+      --color-primary: #0d6efd;
+      --color-success: #198754;
+      --color-danger: #dc3545;
+      --color-muted: #6c757d;
+      --touch-min: 44px;
+      --font-base: 1rem;
+      --space: 0.75rem;
+    }
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, "Microsoft JhengHei", sans-serif; font-size: var(--font-base); line-height: 1.5; margin: 0; padding: var(--space); color: #212529; }
+    .container { max-width: 1024px; margin: 0 auto; }
+
+    /* 導覽／頂欄：操作一致性 */
+    .navbar { display: flex; align-items: center; justify-content: space-between; padding: var(--space) 0; border-bottom: 1px solid #dee2e6; margin-bottom: 1rem; }
+    .breadcrumb { color: var(--color-muted); font-size: 0.875rem; }
+    .breadcrumb a { color: var(--color-primary); text-decoration: none; }
+    .nav-user { font-size: 0.875rem; }
+    .nav-user a { margin-left: 1rem; color: var(--color-muted); text-decoration: none; }
+    /* 登出示意：資安要求 */
+    .nav-user .logout { color: var(--color-danger); }
+
+    /* 畫面／步驟：可轉為操作說明與訓練 */
+    [data-screen] { margin-bottom: 1.5rem; }
+    [data-step] { margin-bottom: 1rem; }
+
+    /* 表單：欄位說明一致性、必填 */
+    .form-group { margin-bottom: 1rem; }
+    .form-group label { display: block; margin-bottom: 0.25rem; font-weight: 500; }
+    .form-group label .required { color: var(--color-danger); }
+    .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 0.5rem; font-size: var(--font-base); border: 1px solid #ced4da; border-radius: 4px; }
+    .form-group .hint { font-size: 0.875rem; color: var(--color-muted); margin-top: 0.25rem; }
+    /* 可觸控：響應式 */
+    @media (max-width: 767px) {
+      .form-group input, .form-group select, .form-group textarea { min-height: var(--touch-min); }
+    }
+
+    /* 訊息區塊：操作一致性 */
+    .message { padding: var(--space); border-radius: 4px; margin-bottom: 1rem; display: none; }
+    .message.show { display: block; }
+    .message.success { background: #d1e7dd; color: #0f5132; border: 1px solid #badbcc; }
+    .message.error { background: #f8d7da; color: #842029; border: 1px solid #f5c2c7; }
+
+    /* 按鈕區：送出在右、取消在左 */
+    .btn-group { display: flex; gap: var(--space); justify-content: flex-end; margin-top: 1.5rem; }
+    .btn { padding: 0.5rem 1rem; min-height: var(--touch-min); min-width: 80px; font-size: var(--font-base); border-radius: 4px; cursor: pointer; border: 1px solid transparent; }
+    .btn-primary { background: var(--color-primary); color: #fff; }
+    .btn-secondary { background: #6c757d; color: #fff; }
+    /* 順序：取消左、送出右 */
+    .btn-group .btn-secondary { order: 1; }
+    .btn-group .btn-primary { order: 2; }
+
+    /* 欄位說明區塊：可擷取為手冊附錄 */
+    .field-desc { font-size: 0.875rem; color: var(--color-muted); margin-top: 2rem; padding-top: 1rem; border-top: 1px dashed #dee2e6; }
+    .field-desc dt { font-weight: 500; margin-top: 0.5rem; }
+    .field-desc dd { margin-left: 0; margin-bottom: 0.25rem; }
+
+    /* 資安／環境註記 */
+    .env-note { font-size: 0.75rem; color: var(--color-muted); margin-top: 2rem; padding: var(--space); background: #f8f9fa; border-radius: 4px; }
+    /* 程式說明與操作引導（必備） */
+    .proto-meta { font-size: 0.875rem; color: var(--color-muted); margin-bottom: 1rem; padding: var(--space); background: #f8f9fa; border-radius: 4px; }
+    .proto-meta strong { color: #495057; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- 程式說明與操作引導（必備）；版次可於此或 title 呈現，對外檔名不分版次 -->
+    <section class="proto-meta" aria-label="程式說明與操作引導">
+      <p><strong>程式說明：</strong>[主程式代號] [程式名稱] — [畫面用途、與權限矩陣對應]。<span aria-hidden="true">｜ 版次／更新日：[例 v2、2025-02-20]</span></p>
+      <p><strong>操作引導：</strong>[步驟摘要、主要按鈕說明、必填欄位、送出後預期行為]。</p>
+    </section>
+
+    <header class="navbar">
+      <nav class="breadcrumb" aria-label="導覽">
+        <a href="#">首頁</a> &gt; <a href="#">[主作業名稱]</a> &gt; <span>[目前畫面]</span>
+      </nav>
+      <div class="nav-user">
+        <span>[角色：承辦／主管]</span>
+        <!-- 登出示意：逾時登出與 Session 管理由正式系統實作 -->
+        <a href="#" class="logout">登出</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- 訊息區塊：成功／錯誤同一位置，專案內一致 -->
+      <div id="msgBlock" class="message" role="alert" aria-live="polite"></div>
+
+      <!-- data-screen 對應手冊章節／訓練步驟；主程式代號-步驟序 -->
+      <section data-screen="[主程式代號]-01" data-step="1">
+        <h1>[畫面標題]</h1>
+
+        <form id="mainForm" novalidate>
+          <!-- 欄位請與「模組欄位名稱中英文對照表」一致；data-field-id 與對照表英文／縮寫對齊 -->
+          <div class="form-group">
+            <label for="field1"><span class="required">*</span> [欄位中文名稱]</label>
+            <input type="text" id="field1" name="[對照表英文或縮寫]" data-field-id="[MODULE_FIELD_ID]" aria-label="[欄位中文名稱]" placeholder="[若有]">
+            <span class="hint">[與對照表「用途」一致之說明]</span>
+          </div>
+          <div class="form-group">
+            <label for="field2">[欄位中文名稱二]</label>
+            <!-- 敏感欄位：雛型以遮罩或假資料示範，不使用真實個資 -->
+            <input type="text" id="field2" name="[對照表英文]" data-field-id="[MODULE_FIELD_ID_2]" aria-label="[欄位中文名稱二]" value="***" readonly>
+            <span class="hint">僅供示意，正式環境不得使用真實個資</span>
+          </div>
+          <div class="form-group">
+            <label for="field3">[下拉選項]</label>
+            <select id="field3" name="[對照表英文]" data-field-id="[MODULE_FIELD_ID_3]" aria-label="[下拉選項]">
+              <option value="">請選擇</option>
+              <option value="A">選項 A</option>
+            </select>
+          </div>
+
+          <div class="btn-group">
+            <button type="button" class="btn btn-secondary">取消</button>
+            <button type="submit" class="btn btn-primary">送出</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- 欄位說明區塊（可選）：可擷取為手冊附錄表格 -->
+      <dl class="field-desc">
+        <dt>[對照表英文] — [欄位中文名稱]</dt>
+        <dd>[用途說明]</dd>
+        <dt>[對照表英文] — [欄位中文名稱二]</dt>
+        <dd>[用途說明]</dd>
+      </dl>
+    </main>
+
+    <!-- 資安與環境註記：正式環境須 HTTPS；實際送出須經後端驗證與加密 -->
+    <p class="env-note" role="note">
+      本雛型僅供需求確認。正式環境須以 <strong>HTTPS</strong> 提供；表單實際送出須經後端驗證與加密。資料皆為假資料／遮罩，不得使用真實個資。
+    </p>
+  </div>
+
+  <script>
+    // 雛型須以 JS + 資料模擬互動（表單驗證、按鈕反應、列表／步驟切換等），非僅靜態 HTML
+    // 假資料可內嵌於此或獨立 .js，供客戶實際操作確認
+    document.getElementById('mainForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var msg = document.getElementById('msgBlock');
+      msg.textContent = '（雛型）送出成功示意；正式系統將經後端驗證。';
+      msg.className = 'message success show';
+    });
+  </script>
+</body>
+</html>

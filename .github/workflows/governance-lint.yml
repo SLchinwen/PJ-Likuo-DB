@@ -1,0 +1,20 @@
+# Template Repo 治理 Lint（R1、R2 最小集、R9）
+# 於 push/PR 時執行關鍵檢查，確保根目錄無專案污染、主路徑 .md 具 YAML 必填欄位與 layer-stability 一致
+name: Governance Lint
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  governance-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run governance lint (R1, R2 minimal, R9)
+        run: |
+          chmod +x .github/scripts/governance-lint-check.sh
+          .github/scripts/governance-lint-check.sh .

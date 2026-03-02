@@ -1,0 +1,4 @@
+_archive/**
+_archive/migration_backup/**
+_archive/legacy_workspace/**
+_archive/stubs/**# Add directories or file patterns to ignore during indexing (e.g. foo/ or *.csv)

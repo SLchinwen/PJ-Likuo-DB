@@ -1,0 +1,25 @@
+# 對外網站僅發布 docs 根目錄之對外頁面；不納入 docs/internal、docs/internal_docs。
+# 若 MkDocs 版本支援，可設定 exclude_docs 或僅在 nav 列出對外頁面，避免內部路徑被建置。
+site_name: 客戶服務手冊
+site_url: https://<您的GitHub帳號>.github.io/<專案名>
+nav:
+  - 首頁: index.md
+  - 功能與說明: features.md
+theme:
+  name: material            # 使用最美的 Material 主題
+  language: zh-TW           # 繁體中文介面
+  features:
+    - navigation.expand     # 左側選單預設展開
+    - navigation.top        # 回到頂部按鈕
+  palette:
+    primary: teal           # 主色調 (可改)
+
+markdown_extensions:
+  - pymdownx.superfences:   # 這是支援 Mermaid 的關鍵擴充
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+plugins:
+  - search                  # 搜尋功能
