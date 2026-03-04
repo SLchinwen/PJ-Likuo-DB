@@ -11,7 +11,7 @@ status: active
 # MCR310 客戶合約工作項目建檔｜操作說明
 
 - **程式代號：** MCR310
-- **雛型檔名：** 2026-02-26_prototype_MCR310.html
+- **雛型檔名：** prototype_MCR310.html
 - **更新日：** 2026-02-26
 
 ---
@@ -63,6 +63,6 @@ status: active
 
 ## 四、雛型與範本連結
 
-- **本雛型：** [2026-02-26_prototype_MCR310.html](2026-02-26_prototype_MCR310.html)
+- **本雛型：** [prototype_MCR310.html](../prototype/prototype_MCR310.html)
 - **本操作說明：** 本檔
-- **匯入範本：** [2026-02-26_prototype_MCR310_匯入範本.csv](2026-02-26_prototype_MCR310_匯入範本.csv)
+- **匯入範本：** [prototype_MCR310_匯入範本.csv](../prototype/prototype_MCR310_匯入範本.csv)

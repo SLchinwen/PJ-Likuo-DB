@@ -11,7 +11,7 @@ status: active
 # MCR320 客戶設備對應工作項目建檔｜操作說明
 
 - **程式代號：** MCR320
-- **雛型檔名：** 2026-02-26_prototype_MCR320.html
+- **雛型檔名：** prototype_MCR320.html
 - **更新日：** 2026-02-26
 
 ---
@@ -64,6 +64,6 @@ status: active
 
 ## 四、雛型與範本連結
 
-- **本雛型：** [2026-02-26_prototype_MCR320.html](2026-02-26_prototype_MCR320.html)
+- **本雛型：** [prototype_MCR320.html](../prototype/prototype_MCR320.html)
 - **本操作說明：** 本檔
-- **匯入範本：** [2026-02-26_prototype_MCR320_匯入範本.csv](2026-02-26_prototype_MCR320_匯入範本.csv)
+- **匯入範本：** [prototype_MCR320_匯入範本.csv](../prototype/prototype_MCR320_匯入範本.csv)

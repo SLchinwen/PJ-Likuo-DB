@@ -1,10 +1,22 @@
 # 對外網站僅發布 docs 根目錄之對外頁面；不納入 docs/internal、docs/internal_docs。
 # 若 MkDocs 版本支援，可設定 exclude_docs 或僅在 nav 列出對外頁面，避免內部路徑被建置。
-site_name: 客戶服務手冊
-site_url: https://<您的GitHub帳號>.github.io/<專案名>
+site_name: 立國工程管理系統
+site_url: https://SLchinwen.github.io/PJ-Likuo-DB
+
+# 指定文件來源目錄（指向專案內的 docs）
+docs_dir: projects/LIKUO_DB/docs
+
 nav:
   - 首頁: index.md
-  - 功能與說明: features.md
+  - 系統範圍與規劃: scope.md
+  - 功能與雛型預覽: features.md
+  - 操作手冊:
+      - 總覽: guides/index.md
+      - 第一階段操作手冊（MCR）: guides/mcr_phase1.md
+      - MCR310 客戶合約工作項目建檔: guides/prototype_MCR310.md
+      - MCR320 客戶設備工作項目建檔: guides/prototype_MCR320.md
+  - 版本與更新紀錄: changelog.md
+
 theme:
   name: material            # 使用最美的 Material 主題
   language: zh-TW           # 繁體中文介面
