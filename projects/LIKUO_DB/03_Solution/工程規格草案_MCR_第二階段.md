@@ -5,7 +5,7 @@ domain: solution
 stability: medium
 visibility: internal
 owner: systemlead
-status: active
+doc_status: active
 ---
 
 # 工程規格草案｜MCR 第二階段

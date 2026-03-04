@@ -5,7 +5,7 @@ domain: api
 stability: medium
 visibility: internal
 owner: systemlead
-status: active
+doc_status: active
 title: "批次規格（範本）"
 type: Template
 tags: [批次, 無 UI, 規格]

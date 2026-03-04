@@ -5,7 +5,7 @@ domain: security
 stability: medium
 visibility: internal
 owner: systemlead
-status: active
+doc_status: active
 title: "開發要求與資安清單（範本）"
 type: Template
 tags: [交付開發包, 資安, 開發要求]

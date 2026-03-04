@@ -26,6 +26,11 @@ theme:
   palette:
     primary: teal           # 主色調 (可改)
 
+extra_css:
+  - stylesheets/extra.css
+
+copyright: Made with Material for MkDocs
+
 markdown_extensions:
   - pymdownx.superfences:   # 這是支援 Mermaid 的關鍵擴充
       custom_fences:

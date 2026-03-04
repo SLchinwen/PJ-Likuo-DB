@@ -5,7 +5,7 @@ domain: prd
 stability: medium
 visibility: internal
 owner: systemlead
-status: active
+doc_status: active
 ---
 
 # PRD｜立國工程 MCR 第二階段

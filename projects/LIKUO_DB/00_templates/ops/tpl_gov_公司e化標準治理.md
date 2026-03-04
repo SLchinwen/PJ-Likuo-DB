@@ -5,7 +5,7 @@ domain: governance
 stability: medium
 visibility: internal
 owner: systemlead
-status: active
+doc_status: active
 title: "[專案名稱] 公司 e化 標準治理"
 type: Spec
 tags: [公司標準, e化治理, 對內對外文件, 開發文件需求, 模組命名規則]

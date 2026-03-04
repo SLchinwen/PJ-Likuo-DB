@@ -5,7 +5,7 @@ domain: prd
 stability: medium
 visibility: internal
 owner: systemlead
-status: active
+doc_status: active
 title: "PRD｜本階段範圍摘要（範本）"
 type: Template
 tags: [交付開發包, PRD, 範圍摘要]

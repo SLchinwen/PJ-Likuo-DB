@@ -5,7 +5,7 @@ domain: delivery
 stability: medium
 visibility: internal
 owner: systemlead
-status: active
+doc_status: active
 title: "程式代號與權限矩陣｜交付用（範本）"
 type: Template
 tags: [交付開發包, 程式代號, 權限矩陣]

@@ -5,7 +5,7 @@ domain: prd
 stability: medium
 visibility: internal
 owner: systemlead
-status: active
+doc_status: active
 title: "驗收條件（範本）"
 type: Template
 tags: [驗收條件, F/P/S/D/B, 結構化]

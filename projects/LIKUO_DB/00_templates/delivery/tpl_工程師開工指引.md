@@ -5,7 +5,7 @@ domain: delivery
 stability: medium
 visibility: internal
 owner: systemlead
-status: active
+doc_status: active
 title: "工程師開工指引（範本）"
 type: Template
 tags: [交付開發包, 開工, 自檢, AI Prompt]

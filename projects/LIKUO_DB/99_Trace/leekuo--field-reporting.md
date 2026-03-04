@@ -19,7 +19,7 @@ publish_recommendation: blocked
 publish_target: none
 quality_flags: []
 quality_score: 0.85
-status: Draft
+doc_status: Draft
 suggested_filename: leekuo--field-reporting.md
 tags:
 - leekuo

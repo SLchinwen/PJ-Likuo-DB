@@ -20,7 +20,7 @@ publish_recommendation: blocked
 publish_target: none
 quality_flags: []
 quality_score: 0.78
-status: Draft
+doc_status: Draft
 suggested_filename: leekuo--maintain-case-equipment.md
 tags:
 - leekuo

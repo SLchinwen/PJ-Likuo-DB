@@ -5,7 +5,7 @@ domain: prd
 stability: medium
 visibility: internal
 owner: systemlead
-status: active
+doc_status: active
 ---
 
 # [專案名稱] 解決方案規格書 (PRD)

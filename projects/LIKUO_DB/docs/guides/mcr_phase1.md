@@ -5,7 +5,7 @@ domain: docs
 stability: medium
 visibility: external
 owner: systemlead
-status: active
+doc_status: active
 ---
 
 # 第一階段操作手冊_標準版（MCR）

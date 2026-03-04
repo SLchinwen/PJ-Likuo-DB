@@ -5,7 +5,7 @@ domain: delivery
 stability: medium
 visibility: internal
 owner: systemlead
-status: active
+doc_status: active
 title: "子程式清單｜交付用（範本）"
 type: Template
 tags: [交付開發包, 子程式, 雛型對應, 實作建議]

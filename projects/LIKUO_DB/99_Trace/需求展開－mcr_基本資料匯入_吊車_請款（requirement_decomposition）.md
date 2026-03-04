@@ -16,7 +16,7 @@ category: "spec"
 type: "Requirements"
 
 # 生命週期
-status: "Draft"
+doc_status: "Draft"
 approval_status: "internal"
 needs_review: true
 confidence: 0.75

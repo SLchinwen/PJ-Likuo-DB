@@ -5,7 +5,7 @@ domain: delivery
 stability: medium
 visibility: internal
 owner: systemlead
-status: active
+doc_status: active
 title: "情境與驗收說明｜交付用（範本）"
 type: Template
 tags: [交付開發包, 情境, 驗收條件, 結構化]

@@ -5,7 +5,7 @@ domain: analysis
 stability: medium
 visibility: internal
 owner: systemlead
-status: active
+doc_status: active
 ---
 
 # 出缺勤系統｜PRD 展開前檢核與建議

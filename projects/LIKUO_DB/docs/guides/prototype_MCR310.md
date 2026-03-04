@@ -5,7 +5,7 @@ domain: prototype
 stability: medium
 visibility: external
 owner: systemlead
-status: active
+doc_status: active
 ---
 
 # MCR310 客戶合約工作項目建檔｜操作說明

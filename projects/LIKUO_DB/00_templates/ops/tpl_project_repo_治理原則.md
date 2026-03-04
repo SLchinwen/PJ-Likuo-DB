@@ -5,7 +5,7 @@ domain: governance
 stability: medium
 visibility: internal
 owner: systemlead
-status: active
+doc_status: active
 ---
 
 # Project Repo 治理原則
@@ -68,7 +68,7 @@ projects/<project_key>/
 | 項目 | 要求 |
 |------|------|
 | **結構隔離** | 專案產物置於 `projects/<project_key>/` 或約定工作區內；若為自 Template Repo clone 之 Repo，**根目錄不得**出現 `projects/`、`01_Discovery/`、`03_Solution/`、`90_delivery_packages/` 等與 Template 主路徑混淆之目錄（應在專案子目錄內建立）。 |
-| **文件識別** | 重要 .md（PRD、交付包說明、治理相關）**建議**具 YAML 必填欄位：`doc_id`、`layer`、`domain`、`stability`、`visibility`、`owner`、`status`；格式見 Template Repo [治理總則](../../core/gov_e化專案治理總則.md) §1.2。 |
+| **文件識別** | 重要 .md（PRD、交付包說明、治理相關）**建議**具 YAML 必填欄位：`doc_id`、`layer`、`domain`、`stability`、`visibility`、`owner`、`doc_status`（原 status 改名以避免 MkDocs 圖示衝突）；格式見 Template Repo [治理總則](../../core/gov_e化專案治理總則.md) §1.2。 |
 | **引用優於複製** | 能引用 Template Repo 之 core／standards 時以連結或 doc_id 引用，避免整份複製導致版本分岔。 |
 | **PRD 模組化** | 專案 PRD 依 [PRD 拆分與交付單元規則](../../standards/prd/prd_拆分與交付單元規則.md) 採最小可交付單元（一主程式＋子程式）撰寫，以利 AI 與審核載入。 |
 | **變更可追溯** | 重大治理或規格變更保留版本紀錄或 commit 說明，以利稽核。 |

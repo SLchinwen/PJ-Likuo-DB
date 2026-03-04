@@ -5,7 +5,7 @@ domain: governance
 stability: medium
 visibility: internal
 owner: systemlead
-status: active
+doc_status: active
 title: "客戶與專案背景（範本）"
 type: Template
 tags: [公司背景, 客戶, Discovery]

@@ -5,7 +5,7 @@ domain: prd
 stability: medium
 visibility: internal
 owner: systemlead
-status: active
+doc_status: active
 ---
 
 # [客戶名稱] 需求訪談紀錄

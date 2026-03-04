@@ -35,6 +35,12 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
+      # 4.5 更新 mkdocs.yml 中的版權宣告日期
+      - name: Update copyright date
+        run: |
+          DATE=$(date +'%Y-%m-%d %H:%M')
+          sed -i "s/copyright: Made with Material for MkDocs.*/copyright: Made with Material for MkDocs [Last Update: $DATE] by SystemLead/" mkdocs.yml
+
       # 5. 建置並部署到 gh-pages 分支
       - name: Deploy to GitHub Pages
         run: mkdocs gh-deploy --force

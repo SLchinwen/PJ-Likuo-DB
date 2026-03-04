@@ -5,7 +5,7 @@ domain: prototype
 stability: medium
 visibility: external
 owner: systemlead
-status: active
+doc_status: active
 ---
 
 # MCR320 客戶設備對應工作項目建檔｜操作說明

@@ -5,7 +5,7 @@ domain: analysis
 stability: medium
 visibility: internal
 owner: systemlead
-status: active
+doc_status: active
 ---
 
 # MCR 請款流程｜參考

@@ -5,7 +5,7 @@ domain: prd
 stability: medium
 visibility: internal
 owner: systemlead
-status: active
+doc_status: active
 title: "需求變更單（範本）"
 type: Template
 tags: [需求變更, 變更補充包]

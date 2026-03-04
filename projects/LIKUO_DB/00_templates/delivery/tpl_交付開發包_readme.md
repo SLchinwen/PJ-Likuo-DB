@@ -5,7 +5,7 @@ domain: delivery
 stability: medium
 visibility: internal
 owner: systemlead
-status: active
+doc_status: active
 title: "交付開發包｜README（範本）"
 type: Template
 tags: [交付開發包, README, 依賴, 技術棧]

@@ -5,7 +5,7 @@ domain: docs
 stability: medium
 visibility: external
 owner: systemlead
-status: active
+doc_status: active
 ---
 
 # 功能清單與雛型預覽

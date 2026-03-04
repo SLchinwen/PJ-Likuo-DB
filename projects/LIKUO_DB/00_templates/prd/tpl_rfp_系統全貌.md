@@ -5,7 +5,7 @@ domain: prd
 stability: medium
 visibility: internal
 owner: systemlead
-status: active
+doc_status: active
 title: "RFP｜系統全貌（範本）"
 type: Template
 tags: [RFP, 系統全貌, 主程式清單]

@@ -5,7 +5,7 @@ domain: delivery
 stability: medium
 visibility: internal
 owner: systemlead
-status: active
+doc_status: active
 title: "欄位名稱對照表｜交付用（範本）"
 type: Template
 tags: [交付開發包, 欄位對照, 必填, 錯誤情境]

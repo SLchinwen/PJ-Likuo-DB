@@ -16,7 +16,7 @@ category: "operations"
 type: "Scenario"
 
 # 生命週期
-status: "Draft"
+doc_status: "Draft"
 approval_status: "internal"
 needs_review: true
 confidence: 0.8
