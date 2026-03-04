@@ -4,7 +4,7 @@ name: Publish to GitHub Pages
 on:
   push:
     branches:
-      - main  # 注意：如果您原本的主分支叫 master，請將此處改為 master
+      - master  # 您的主分支為 master
 
 # 權限設定：賦予機器人寫入權限，以便將網頁檔案推送到 gh-pages 分支
 permissions:
