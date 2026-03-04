@@ -35,11 +35,11 @@ status: active
 |---------|------|---------|---------|
 | MCR310 | 客戶合約工作項目建檔 | [開啟雛型](prototype/prototype_MCR310.html) | [操作說明](guides/prototype_MCR310.md) |
 | MCR320 | 客戶設備工作項目建檔 | [開啟雛型](prototype/prototype_MCR320.html) | [操作說明](guides/prototype_MCR320.md) |
-| — | 吊車排程儀錶板 | [開啟雛型](prototype/prototype_CraneDashboard.html) | 規劃中 |
+| — | 吊車排程儀錶板 | [開啟雛型](prototype/prototype_CraneDashboard.html) | 暫停中 |
 
 ---
 
-## HR 出缺勤系統（規劃中）
+## HR 出缺勤系統（暫停中）
 
 | 模組 | 用途 |
 |------|------|
@@ -49,4 +49,4 @@ status: active
 | 加班與法規稽核 | 法定加班計算與超限處理 |
 | 月結算與假別 | 自動產出曠職/遲到/早退 |
 
-→ 雛型開發中，完成後將於此頁更新連結。
+→ 雛型開發暫停中，完成後將於此頁更新連結。

@@ -7,15 +7,15 @@ site_url: https://SLchinwen.github.io/PJ-Likuo-DB
 docs_dir: projects/LIKUO_DB/docs
 
 nav:
-  - 首頁: index.md
-  - 系統範圍與規劃: scope.md
-  - 功能與雛型預覽: features.md
-  - 操作手冊:
-      - 總覽: guides/index.md
-      - 第一階段操作手冊（MCR）: guides/mcr_phase1.md
-      - MCR310 客戶合約工作項目建檔: guides/prototype_MCR310.md
-      - MCR320 客戶設備工作項目建檔: guides/prototype_MCR320.md
-  - 版本與更新紀錄: changelog.md
+  - 1. 首頁: index.md
+  - 2. 系統範圍與規劃: scope.md
+  - 3. 功能與雛型預覽: features.md
+  - 4. 操作手冊:
+      - 4-1. 總覽: guides/index.md
+      - 4-2. 第一階段操作手冊（MCR）: guides/mcr_phase1.md
+      - 4-3. MCR310 客戶合約工作項目建檔: guides/prototype_MCR310.md
+      - 4-4. MCR320 客戶設備工作項目建檔: guides/prototype_MCR320.md
+  - 5. 版本與更新紀錄: changelog.md
 
 theme:
   name: material            # 使用最美的 Material 主題
